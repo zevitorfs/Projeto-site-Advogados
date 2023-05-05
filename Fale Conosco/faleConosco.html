@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="faleConosco.css">
+</head>
+<body>
+    <!-- sexo,cidade,estado,area da messagem
+     -->
+    <h1>Envie sua duvida</h1>
+    <form action="">
+        <p>
+            <label for="idnome">Nome:</label>
+            <input type="text" name="nome" id="idnome">
+        </p>
+        <p>
+            <label for="idfone">Telefone:</label>
+            <input type="tel" name="fone" id="idfone" pattern="[0-9]{5}-[0-9]{4}" placeholder="99999-9999">
+        </p>
+        <p>
+            <label for="idemail">E-mail:</label>
+            <input type="email" name="email" id="idemail">
+        </p>
+        <p>
+            <label for="idsexo">Sexo:</label>
+            <select name="sexo" id="idcarro">
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+                <option value="prefirondefinir">Prefiro não definir</option>
+            </select>
+            
+        </p>
+
+        <p>
+            <label for="idcidade">Cidade:</label>
+            <input type="text" name="cidade" id="idcidade"> 
+        </p>
+        <p>
+            <label for="idestado">Selecione seu estado:</label>
+                <select id="idestado" name="estado">
+                  <option value="selestado">Selecione um estado</option>
+                  <option value="AC">Acre</option>
+                  <option value="AL">Alagoas</option>
+                  <option value="AP">Amapá</option>
+                  <option value="AM">Amazonas</option>
+                  <option value="BA">Bahia</option>
+                  <option value="CE">Ceará</option>
+                  <option value="DF">Distrito Federal</option>
+                  <option value="ES">Espírito Santo</option>
+                  <option value="GO">Goiás</option>
+                  <option value="MA">Maranhão</option>
+                  <option value="MT">Mato Grosso</option>
+                  <option value="MS">Mato Grosso do Sul</option>
+                  <option value="MG">Minas Gerais</option>
+                  <option value="PA">Pará</option>
+                  <option value="PB">Paraíba</option>
+                  <option value="PR">Paraná</option>
+                  <option value="PE">Pernambuco</option>
+                  <option value="PI">Piauí</option>
+                  <option value="RJ">Rio de Janeiro</option>
+                  <option value="RN">Rio Grande do Norte</option>
+                  <option value="RS">Rio Grande do Sul</option>
+                  <option value="RO">Rondônia</option>
+                  <option value="RR">Roraima</option>
+                  <option value="SC">Santa Catarina</option>
+                  <option value="SP">São Paulo</option>
+                  <option value="SE">Sergipe</option>
+                  <option value="TO">Tocantins</option>
+                </select>
+              
+              
+        </p>
+        <p>
+            <label for="idmessagem">Digite a Messagem:</label>
+        </p>
+
+        <p>
+          
+            <textarea name="messagem" id="idmessagem" cols="30" rows="10">Digite seu texto aqui</textarea>
+        </p>
+          <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
