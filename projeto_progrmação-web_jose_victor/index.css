@@ -9,6 +9,7 @@
 }
 body{
     background-color: #f1f6fc31;
+    min-height: calc(100vh - 60px);
 }
 section, footer{
     padding: 54px 0;
@@ -88,6 +89,7 @@ nav{
     padding-top: 30px;
 }
 
+
 nav ul{
     display: flex;
     align-items: center;
@@ -123,10 +125,12 @@ nav .menu-icon{
 }
 
 nav .close-icon{
+    cursor: pointer;
     display: none;
     font-size: 30px;
     color: azure;
 }
+
 
 .conteudo-home .container{
     display: flex;
@@ -185,6 +189,7 @@ nav .close-icon{
 
 .depoimentos .card-item img{
     width: 80px;
+    height: 80px;
     display: block;
     margin: 10px auto;
 }
@@ -251,16 +256,3 @@ nav .close-icon{
         right: 28px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-

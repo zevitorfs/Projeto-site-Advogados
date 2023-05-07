@@ -9,12 +9,11 @@
 }
 
 
-main{
-    height: 80vh;
-}
+
 footer{
     width: 100%;
     color: #f5f5f5;
+    height: 60px;
 }
 
 .footer-link{
@@ -22,19 +21,23 @@ footer{
 }
 
 #footer_content{
-    background-color: #40241E;
+    background-color: #521908;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 3rem 3.5rem;
     
 }
 
-#footer_contacts h1{
+#footer_contacts {
     margin-bottom: 0.75rem ;
-    margin-right: 20rem;
+    margin-right: 2rem;
     gap: 2em;
+
 }
 
+#footer_contacts h3{
+    font-size: 20px;
+}
 
 #footer_social_media{
     display: flex;
@@ -58,9 +61,11 @@ footer{
 img{
     width: 25px;
     height: 25px;
-    margin: 8px;
-    
-    
+    margin: 8px; 
+}
+#logoimg{
+    width: 45px;
+    height: 45px;
 }
 #instagram{
     background: linear-gradient(#7f37c9, #ff2992, #ff9807);
@@ -88,7 +93,10 @@ img{
     gap: 0.75rem;
    list-style: none;  /* tira as bolinha */
 }
+.footer-list h3{
+    font-size: 20px;
 
+}
 .footer-list .footer-link{
     color: #a8a29e;
     transition: all 0.4s;
@@ -102,7 +110,7 @@ img{
 #footer_copyrigth{
     display: flex;
     justify-content: center;
-    background-color: #40241E;
+    background-color: #521908;
     font-size: 0.9rem;
     padding: 1.5rem;
     font-weight: 100;

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Conosco</title>
+    <link rel="stylesheet" href="faleConosco.css">
+    <link rel="stylesheet" href="footer.css">
+</head>
+<body>
+
+    <header style="background-image: url(img/img-home.jpg);">
+        <div class="container">
+            <nav>
+                <a href="home.html" id="logoi">
+                    <img src="img/logo.png" height="100px" alt="logo">
+                </a>
+                <ul class="ul">
+                    <a href="home.html">Home</a>
+                    <a href="sobre.html">Sobre</a>
+                    <a href="servicos.html">Serviços</a>
+                    <a href="nossaMissao.html"> Missão</a>
+                    <a class="btn" href="faleConosco.html" >Fale Conosco</a>
+                    <div class="close-icon" onclick="closeMenu()">
+                        <i class="fa fa-times-circle" aria-hidden="true"></i>
+                    </div>
+                </ul>
+                <div class="menu-icon" onclick="openMenu()">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+
+            </nav>
+            <section class="banner">
+                <div class="banner-text">
+                    <h1>Escritório de Advocacia</h1>
+                    <p>Somos um escritório de advocacia especializado em fornecer soluções jurídicas eficazes e personalizadas para nossos clientes. Com anos de experiência em diversas áreas do direito, estamos preparados para atender a todas as necessidades legais de nossos clientes.</p>
+                    <a href="faleConosco.html" class="btn animate-btn">Entrar em contato</a>
+                </div>
+
+            </section>
+
+        </div>
+    </header>
+
+    <main>
+        
+        <section id="formulario">
+            <header>
+                <h1>Envie sua duvida</h1>
+            </header>
+           
+            
+            <form>
+               
+                    <div class="input-group">
+                        <div class="input-box">
+                            <label for="idnome">Nome:</label>
+                            <input type="text" name="nome" id="idnome" placeholder="Digite seu nome" required>
+                            <!-- o required servi para dizer que esse camp é obrigatorio -->
+                        </div>
+                        
+                        <div class="input-box">
+                            <label for="idfone">Telefone:</label>
+                            <input type="tel" name="fone" id="idfone" pattern="[0-9]{5}-[0-9]{4}" placeholder="99999-9999" required>
+                        </div>
+                        
+                        <div class="input-box">
+                        
+                             <label for="idemail">E-mail:</label>
+                            <input type="email" name="email" id="idemail" placeholder="Digite seu E-mail" required>
+                        </div>
+                        
+                        <div class="input-box">
+                            <label for="idsexo">Sexo:</label>
+                            <select name="sexo" id="idcarro">
+                                <option value="masculino">Masculino</option>
+                                <option value="feminino">Feminino</option>
+                                <option value="prefirondefinir">Prefiro não definir</option>
+                            </select>
+                        </div>
+                        
+                        <div class="input-box">
+                            <label for="idcidade">Cidade:</label>
+                            <input type="text" name="cidade" id="idcidade" placeholder="Digite sua cidade">
+                        </div>
+                        <div class="input-box">
+                        
+                            <label for="idestado">Selecione seu estado:</label>
+                                <select id="idestado" name="estado">
+                                  <option value="selestado">Selecione um estado</option>
+                                  <option value="AC">Acre</option>
+                                  <option value="AL">Alagoas</option>
+                                  <option value="AP">Amapá</option>
+                                  <option value="AM">Amazonas</option>
+                                  <option value="BA">Bahia</option>
+                                  <option value="CE">Ceará</option>
+                                  <option value="DF">Distrito Federal</option>
+                                  <option value="ES">Espírito Santo</option>
+                                  <option value="GO">Goiás</option>
+                                  <option value="MA">Maranhão</option>
+                                  <option value="MT">Mato Grosso</option>
+                                  <option value="MS">Mato Grosso do Sul</option>
+                                  <option value="MG">Minas Gerais</option>
+                                  <option value="PA">Pará</option>
+                                  <option value="PB">Paraíba</option>
+                                  <option value="PR">Paraná</option>
+                                  <option value="PE">Pernambuco</option>
+                                  <option value="PI">Piauí</option>
+                                  <option value="RJ">Rio de Janeiro</option>
+                                  <option value="RN">Rio Grande do Norte</option>
+                                  <option value="RS">Rio Grande do Sul</option>
+                                  <option value="RO">Rondônia</option>
+                                  <option value="RR">Roraima</option>
+                                  <option value="SC">Santa Catarina</option>
+                                  <option value="SP">São Paulo</option>
+                                  <option value="SE">Sergipe</option>
+                                  <option value="TO">Tocantins</option>
+                                </select>
+                            </div>
+                        
+                        
+                        <div class="input-box">
+                            <label for="idmessagem">Digite a Messagem:</label>
+                        </div>
+                        
+                        
+                        <div class="input-box">
+                            <textarea name="messagem" id="idmessagem" cols="30" rows="10" placeholder="Digite sua messagem"></textarea>
+                        </div>
+                        
+                        
+                    </div>
+                    <div class="enviar-button">
+                        <input type="submit" value="Enviar">  
+                    </div>
+                
+                </form>
+                
+            </section>
+            <div id="timaps">
+                <h4>descubra onde estamos:</h4>
+            
+                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3985.9105974882564!2d-44.28042438867651!3d-2.536053438260187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7f68fb03467a7f3%3A0xd973b822f4fb6dea!2sInstituto%20Federal%20do%20Maranh%C3%A3o%20-%20Monte%20Castelo!5e0!3m2!1spt-BR!2sbr!4v1683462088174!5m2!1spt-BR!2sbr" id="maps" width="400" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+             </div>
+        </main>
+    
+
+
+    
+        <!-- footerrr -->
+        <footer>
+            <div id="footer_content">
+                <div id="footer_contacts">
+                    
+                    <div id="imgLogo"><img src="img/logo.png" alt="logo" id="logoimg"> </div>
+                    <h3>Acesse as nossas redes sociais</h3>
+        
+                    <div id="footer_social_media">
+                        <a href="#" class="footer_link" id="instagram">
+                            <img src="img/instagram.png" alt="Instagram">
+                        </a> 
+                        <a href="#" class="footer_link" id="facebook">
+                            <img src="img/facebook.png" alt="facebook">
+                        </a> 
+                        <a href="#" class="footer_link" id="whatsapp">
+                            <img src="img/whatsapp.png" alt="whatsapp">
+                        </a>
+                    </div>
+                </div>
+                <ul class="footer-list">
+                    <li>
+                        <h3>Informações da empresa</h3>
+                    </li>
+                    <li>
+                        <p class="footer-link">Endereço: Avenidade Joaqui Alves, 67</p>
+                    </li>
+                    <li>
+                        <p class="footer-link">E-mail: empresa_adv@gnail.com </p>
+                    </li>
+                    <li>
+                        <p class="footer-link">Telefone: (98) 987653765</p>
+                    </li>
+                    
+                </ul>
+                <ul class="footer-list">
+                    <li>
+                        <h3>Desenvolvedores</h3>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Jose Victor Ferreira da Silva</a>
+                    </li><li>
+                        <a href="#" class="footer-link">Andressa Borges</a>
+                    </li><li>
+                        
+                    
+                </ul>
+                
+             
+             </div>
+             <div id="footer_copyrigth">
+                &#169
+                2023 all rights resert
+                </div>
+        </footer>
+    </body>
+    </html>
+                        
+                   
+                    

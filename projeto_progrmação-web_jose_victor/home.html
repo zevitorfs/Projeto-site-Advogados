@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="footer.css">
+    <title>Home</title>
+</head>
+<body>
+    <header style="background-image: url(img/img-home.jpg);">
+        <div class="container">
+            <nav>
+                <a href="home.html" id="logoi">
+                    <img src="img/logo.png" alt="logo">
+                </a>
+                <ul class="ul">
+                    <a href="home.html">Home</a>
+                    <a href="sobre.html">Sobre</a>
+                    <a href="servicos.html">Serviços</a>
+                    <a href="nossaMissao.html"> Missão</a>
+                    <a class="btn" href="faleConosco.html" >Fale Conosco</a>
+                    <div class="close-icon" onclick="closeMenu()">
+                        <i class="fa fa-times-circle" aria-hidden="true"></i>
+                    </div>
+                </ul>
+                <div class="menu-icon" onclick="openMenu()">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+
+            </nav>
+            <section class="banner">
+                <div class="banner-text">
+                    <h1>Escritório de Advocacia</h1>
+                    <p>Somos um escritório de advocacia especializado em fornecer soluções jurídicas eficazes e personalizadas para nossos clientes. Com anos de experiência em diversas áreas do direito, estamos preparados para atender a todas as necessidades legais de nossos clientes.</p>
+                    <a href="faleConosco.html" class="btn animate-btn">Entrar em contato</a>
+                </div>
+
+            </section>
+
+        </div>
+    </header>
+
+    <section class="conteudo-home">
+        <div class="container">
+            <div class="text-home">
+                <h3>Conheça melhor nosso trabalho</h3>
+                <p>Somos um escritório de advocacia especializado em fornecer soluções jurídicas eficazes e personalizadas para nossos clientes. Com anos de experiência em diversas áreas do direito, estamos preparados para atender a todas as necessidades legais de nossos clientes. 
+                   <p>Nossa equipe é formada por advogados altamente qualificados e comprometidos em buscar a melhor solução para cada caso, sempre de forma ética, transparente e eficiente. 
+                    Oferecemos serviços jurídicos em diversas áreas, incluindo direito empresarial, trabalhista, civil, imobiliário, tributário, previdenciário, entre outros. </p> 
+                   
+                </p>
+                <a href="contato.html" class="btn animate-btn">Faça Contato</a>
+            </div>
+            <div class="img-conteudo">
+               <img src="img/content-img.jpg" alt="contato juridico">
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="depoimentos">
+
+        <div class="container">
+            <h3>Nossos Depoimentos</h3>
+            <p>Leia o que nossos clientes falam sobre nossos serviços</p>
+            <div class="cards">
+
+                <div class="card-item">
+                    <img src="img/logo.png" alt="Logo da empresa">
+                    <p class="nome-user">Andressa Borges</p>
+                    <p class="depoimento-user">Encontrei o escritório de advocacia por indicação de um amigo, e não poderia estar mais satisfeito com o atendimento e resultado obtido.</p>
+                </div>
+
+                <div class="card-item">
+                    <img src="img/logo.png" alt="Logo da empresa">
+                    <p class="nome-user">Andressa Borges</p>
+                    <p class="depoimento-user">A equipe de advogados mostrou-se extremamente competente e comprometida com meu caso, sempre me mantendo informado e esclarecendo todas as minhas dúvidas. </p>
+                </div>
+
+                <div class="card-item">
+                    <img src="img/logo.png" alt="Logo da empresa">
+                    <p class="nome-user">Andressa Borges</p>
+                    <p class="depoimento-user"> A forma como fui tratado com respeito e empatia me deixou muito confortável durante todo o processo. Recomendo fortemente este escritório para qualquer pessoa que precise de serviços jurídicos de qualidade.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    
+
+<script src="main.js">
+
+</script>
+
+<footer>
+    <div id="footer_content">
+        <div id="footer_contacts">
+            
+            <div id="imgLogo"><img src="img/logo.png" alt="logo" id="logoimg"> </div>
+            <h3>Acesse as nossas redes sociais</h3>
+
+            <div id="footer_social_media">
+                <a href="#" class="footer_link" id="instagram">
+                    <img src="img/instagram.png" alt="Instagram">
+                </a> 
+                <a href="#" class="footer_link" id="facebook">
+                    <img src="img/facebook.png" alt="facebook">
+                </a> 
+                <a href="#" class="footer_link" id="whatsapp">
+                    <img src="img/whatsapp.png" alt="whatsapp">
+                </a>
+            </div>
+        </div>
+        <ul class="footer-list">
+            <li>
+                <h3>Informações da empresa</h3>
+            </li>
+            <li>
+                <p class="footer-link">Endereço: Avenidade Joaqui Alves, 67</p>
+            </li>
+            <li>
+                <p class="footer-link">E-mail: empresa_adv@gnail.com </p>
+            </li>
+            <li>
+                <p class="footer-link">Telefone: (98) 987653765</p>
+            </li>
+            
+        </ul>
+        <ul class="footer-list">
+            <li>
+                <h3>Desenvolvedores</h3>
+            </li>
+            <li>
+                <a href="#" class="footer-link">Jose Victor Ferreira da Silva</a>
+            </li><li>
+                <a href="#" class="footer-link">Andressa Borges</a>
+            </li><li>
+                
+            
+        </ul>
+        
+     
+     </div>
+     <div id="footer_copyrigth">
+        &#169
+        2023 all rights resert
+        </div>
+</footer>
+
+</body>
+</html>
