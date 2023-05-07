@@ -7,6 +7,8 @@
     box-sizing: border-box;
     letter-spacing: 1px;
 }
+
+
 main{
     height: 80vh;
 }
@@ -30,6 +32,7 @@ footer{
 #footer_contacts h1{
     margin-bottom: 0.75rem ;
     margin-right: 20rem;
+    gap: 2em;
 }
 
 
@@ -38,30 +41,44 @@ footer{
     gap: 2rem;
     margin-top: 1.5rem;
    
+   
 }
 
 #footer_social_media .footer-link{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 2.5rem;
-    width: 2.5rem;
     color: #f5f5f5;
-    border-radius: 100px;
+    /* border-radius: 100px; */
     transition: all 0.4s;
  }
 #footer_social_media .footer-link:hover{
    opacity: 0.8;
 }
-
+img{
+    width: 25px;
+    height: 25px;
+    margin: 8px;
+    
+    
+}
 #instagram{
     background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+    border-radius: 100px;
+    height: 40px;
+    width: 40px;
 }
 #facebook{
     background-color: #4267b3;
+    border-radius: 100px;
+    height: 40px;
+    width: 40px;
 }
 #whatsapp{
     background-color: #25d366;
+    border-radius: 100px;
+    height: 40px;
+    width: 40px;
 }
 
 /* Agora vamos cuida da listas */
@@ -91,16 +108,19 @@ footer{
     font-weight: 100;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
     #footer_content{
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
     }
 }
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 500px) {
     #footer_content{
+        font-size: 10px;
         grid-template-columns: repeat(1, 1fr);
-        padding: 3 rem 2 rem;
+        padding: 1rem 2rem;
     }
 }
+
+
