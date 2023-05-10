@@ -242,6 +242,26 @@ nav .close-icon{
     color: var(--cor-secundaria);
   }
 
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #b83e19;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    border-radius: 50%;
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+  }
+  
 
   @media screen and (max-width: 900px) {
     #footer_content{
